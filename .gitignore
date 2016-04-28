@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Write a number</title>
+
+</head>
+<body>
+<h1>Write a number from 1 to 10.</h1>
+<input id="answer">
+<button type="button" onclick="Check()">Send</button>
+<p id="message"></p>
+
+
+
+<script>
+function Check(){
+	var  x, text;
+		x = document.getElementById("answer").value;
+		
+		if(isNaN(x) || x < 1 || x > 10) {
+		 text = "Please enter a valid input";
+		}
+			
+	else {
+		text= "Ampo'!";
+	}
+	document.getElementById("message").innerHTML = text;
+	}
+</script>
+</body>
+</html>
